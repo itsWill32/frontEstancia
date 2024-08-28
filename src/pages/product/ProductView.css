@@ -1,0 +1,73 @@
+.container-P{
+    padding: 50px;
+    display: flex;
+}
+
+.img-PV{
+    width: 100%;
+  height: 90vh;
+  object-fit: cover;
+}
+
+.inf-Product{
+    flex: 1;
+  padding: 0px 50px;
+}
+
+h1{
+    font-weight: 200;
+}
+
+.container-Filter{
+    width: 50%;
+    margin: 30px 0px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.filter{
+    display: flex;
+    align-items: center; 
+}
+
+.filter-Size{
+    margin-left: 10px;
+    padding: 5px;
+}
+
+.add-Container{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container-Amount{
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+}
+
+.amount{
+    width: 30px;
+    height: 30px;
+    border-radius: 10px;
+    border: 1px solid teal;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0px 5px;
+}
+
+button{
+    padding: 15px;
+    border: 2px solid teal;
+    background-color: white;
+    cursor: pointer;
+    font-weight: 500;
+    color: black;
+}
+
+button:hover{
+    background-color: #f8f4f4 ;
+}
