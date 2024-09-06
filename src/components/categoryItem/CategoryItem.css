@@ -25,11 +25,11 @@
 }
 
 .title-Item{
-    color:white;
+    color:rgb(140, 140, 140);
     margin-bottom: 20px;
 }
 
-button{
+.button-CI{
     border:none;
     padding: 10px;
     background-color: white;

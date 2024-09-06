@@ -19,29 +19,29 @@
     background-color: white;
 }
 
-h1{
+.title-Register{
     font-size: 24px;
     font-weight: 300; 
 }
 
-form{
+.form-Register{
     display: flex;
     flex-wrap: wrap;
 }
 
-input{
+.input-Register{
     flex: 1;
     min-width: 40%;
     margin: 20px 10px 0px 0px;
     padding: 10px;
 }
 
-span{
+.span-Register{
     font-size: 12px;
     margin: 20px 0px;
 }
 
-button{
+.button-Register{
     width: 40%;
     border: none;
     padding: 15px 20px;

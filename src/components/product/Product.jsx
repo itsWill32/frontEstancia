@@ -5,7 +5,7 @@ import {
 } from "@mui/icons-material";
 import styled from "styled-components";
 import "./Product.css";
-import { Link, useLocation } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const Info = styled.div`
   opacity: 0;
@@ -40,23 +40,22 @@ const Container = styled.div`
 `;
 
 const Product = ({ item }) => {
-  const location = useLocation();
-
-   const id = location.pathname.split("/")[2];
 
   return (
     <Container>
       <div className="back-img" />
       <img className="img-Pr" alt="img-Product" src={item.img} />
       <Info>
+
         <div className="icon-Pr">
           <Link to={"/Product"}>
             <ShoppingCartOutlined />
           </Link>
           
         </div>
+        
         <div className="icon-Pr">
-          <Link to={`/Product/${item._id}`}>
+          <Link to={`/ShopProduct/${item._id}`}>
             <SearchOutlined />
           </Link>
           

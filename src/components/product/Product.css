@@ -6,11 +6,15 @@
     position: absolute;
 }
 
-.img-Pr{
+.img-Pr {
+    width: 75%;
     height: 75%;
+    object-fit: cover;
+    max-width: 300px; /* Tamaño máximo */
+    max-height: 300px; /* Tamaño máximo */
     z-index: 2;
-}
-
+  }
+  
 .icon-Pr{
     width: 40px;
     height: 40px;

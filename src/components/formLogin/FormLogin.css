@@ -18,24 +18,24 @@
   background-color: white;
 }
 
-h1 {
+.title-Login {
   font-size: 24px;
   font-weight: 300;
 }
 
-form {
+.form-Login {
   display: flex;
   flex-direction: column;
 }
 
-input {
+.input-Login {
   flex: 1;
   min-width: 40%;
   margin: 10px 0;
   padding: 10px;
 }
 
-button {
+.button-Login {
   width: 40%;
   border: none;
   padding: 15px 20px;
@@ -43,9 +43,15 @@ button {
   color: white;
   cursor: pointer;
   margin-bottom: 10px;
+  margin-top: 10px !important;
 }
 
-a {
+.button-Login:disabled{
+  color: green;
+  cursor: not-allowed;
+}
+
+.link-Login {
   margin: 5px 0px;
   font-size: 12px;
   text-decoration: underline;

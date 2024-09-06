@@ -7,28 +7,26 @@ import Home from './pages/home/Home';
 import Cart from './pages/cart/Cart';
 import Product from './pages/product/ProductView';
 import ProductList from './pages/productList/ProductList';
-import Footer from './components/footer/Footer';
+import Success from './pages/succes/Succes';
+import { useSelector } from 'react-redux';
 
 function App() {
+  const user = useSelector((state) => state.user.currentUser);
 
-  const user = true;
-  
   return (
-    <>
-      <Router>
-        <Routes>
-          <Route path='/Login' element={<Login/>} />
-          <Route path='/'  element={user ? <Home /> : <Navigate to="/Login" /> } />
-          <Route path='/Register' element={<Register />} />
-          <Route path='/Home' element={<Home />} />
-          <Route path='/Cart' element={<Cart />} />
-          <Route path='/Product' element={<Product />} />
-          <Route path='/Products/:category' element={<ProductList />} />
-          <Route path='/pay' element={<Pay />} />
-          <Route path='/success' element={<Footer />} />
-        </Routes>
-      </Router>
-    </>
+    <Router>
+      <Routes>
+        <Route path='/' element={user ? <Home /> : <Navigate to="/Login" />} />
+        <Route path='/Login' element={<Login />} />
+        <Route path='/Register' element={<Register />} />
+        <Route path='/Home' element={<Home />} />
+        <Route path='/Products/:category' element={<ProductList />} />
+        <Route path='/ShopProduct/:id' element={<Product />} />
+        <Route path='/Cart' element={<Cart />} />
+        <Route path='/pay' element={<Pay />} />
+        <Route path='/success' element={<Success />} />
+      </Routes>
+    </Router>
   );
 }
 

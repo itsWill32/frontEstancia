@@ -53,7 +53,7 @@ export default function Footer() {
 
         <div className="main-Links">
           <h3 style={{ marginBottom: "30px" }}>Enlaces Útiles</h3>
-          <ul className="container-Links">
+          <ul className="container-LinksF">
             <li className="links-f">Inicio</li>
             <li className="links-f">Carrito</li>
             <li className="links-f">Seccion de Hombres</li>
@@ -78,7 +78,7 @@ export default function Footer() {
             <MailOutline style={{ marginRight: "10px" }} />{" "}
             estancia@contacto.com
           </div>
-          <img className="img-Footer" alt="paymet-method" src="https://i.ibb.co/Qfvn4z6/payment.png" />
+          <img alt="paymet-method" src="https://i.ibb.co/Qfvn4z6/payment.png" />
         </div>
       </div>
     </>

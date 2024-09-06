@@ -1,8 +1,13 @@
 import { Badge } from "@mui/material";
-import { Search, ShoppingCartOutlined } from "@mui/icons-material";
+import { Search, ShoppingCartOutlined, Logout } from "@mui/icons-material";
 import "./Navbar.css";
+import { useSelector } from "react-redux";
+import { Link } from "react-router-dom";
 
 export default function Navbar() {
+
+  const quantity = useSelector(state => state.cart.quantity);
+
   return (
     <>
       <div style={{ height: "60px" }}>
@@ -24,15 +29,16 @@ export default function Navbar() {
 
           <div className="container-Links">
             <div className="link-Navbar">
-              <a href="/Register">REGISTRARSE</a>
+              <Link to={'/Login'}>
+                <Logout />
+              </Link>
             </div>
             <div className="link-Navbar">
-              <a href="/">INICIAR SESION</a>
-            </div>
-            <div className="link-Navbar">
-              <Badge badgeContent={4} color="primary">
-                <ShoppingCartOutlined />
-              </Badge>
+              <Link to={"/Cart"}>
+                <Badge badgeContent={quantity} color="primary">
+                  <ShoppingCartOutlined />
+                </Badge>
+              </Link>
             </div>
           </div>
         </div>

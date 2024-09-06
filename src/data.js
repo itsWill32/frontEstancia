@@ -27,19 +27,19 @@ export const sliderItems = [
       id: 1,
       img: "https://media.revistagq.com/photos/5f3623e00c5e55e7fec1e57c/16:9/w_3999,h_2249,c_limit/ryan-plomp-bySPt2lySzg-unsplash.jpg",
       title: "TENIS CASUALES!",
-      cat : 'Tenis Casuales'
+      cat : 'casuales'
     },
     {
       id: 2,
       img: "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/5f5eee4c-ca4e-435b-b1e0-0f0156251a07/tenis-de-entrenamiento-free-metcon-5-0nJCzq.png",
       title: "TENIS DEPORTIVOS",
-      cat: 'Tenis Deportivos'
+      cat: 'deportivos'
     },
     {
       id: 3,
       img: "https://5.imimg.com/data5/SELLER/Default/2023/12/369151198/QG/PD/IZ/192473731/nike-sb-dunk-low-what-the-paul-men-s-sneakers-shoes.jpg",
       title: "SNEAKERS PREMIUM",
-      cat : 'Tenis Premium'
+      cat : 'premium'
     },
   ];
 

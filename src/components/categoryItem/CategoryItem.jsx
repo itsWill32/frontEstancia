@@ -9,9 +9,9 @@ export default function CategoryItem({item}) {
         <img alt="img-Item" className="img-CategIt" src={item.img} />
         <div className="info-Item">
           <h1 className="title-Item">{item.title}</h1>
-          <button type="submit">
+          <button className="button-CI" type="submit">
             COMPRAR AHORA
-            </button>
+          </button>
         </div>
         </Link>
       </div>
